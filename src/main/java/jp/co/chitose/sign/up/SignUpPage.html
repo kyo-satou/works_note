@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>アカウント作成 | 業績管理システム</title>
+</head>
+<body>
+<p>登録するユーザの情報を入力してください</p>
+<form wicket:id="form">
+    ユーザーの種類
+    <div></div>
+    <select wicket:id="user">
+        <option>教員</option>
+        <option>システム管理者</option>
+        <option>事務員</option>
+    </select>
+    <br>
+    <br>
+    メールアドレス（※）: <input type="text" wicket:id="email"><br>
+    ユーザーID（※）: <input type="text" wicket:id="userID"><br>
+    パスワード（※）: <input type="text" wicket:id="password"><br>
+    <br>
+    <button type="submit">アカウントを作成</button>
+</form>
+</body>
+</html>
